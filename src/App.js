@@ -10,7 +10,7 @@ import Team from './components/Team'
 
 export default function App() {
   return (
-    <div className="relative bg-white overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden">
        <Navbar/>
        <LandingPage/>
        <About/>

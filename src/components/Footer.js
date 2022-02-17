@@ -2,9 +2,23 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-                {/* html code goes in here */}
-    </div>
+    <footer>
+        <div className='md:mx-20 mx-5 text-white flex justify-between py-10 md:py-20'>
+            <div>
+                <p style={{fontFamily : 'Luckiest Guy, cursive'}} className="text-3xl">PERFECT <br/> MISFITS</p>
+                <p className='text-[#6666]'>Copywrite @perfectmisfits 2022</p>
+            </div>
+            <div className='hidden md:block'>
+                <a href='#' className='mx-2'>Home</a>
+                <a href='#' className='mx-2'>About</a>
+                <a href='#' className='mx-2'>Roadmap</a>
+            </div>
+            <div>
+                <img src='/icons/twitter.png' className='h-5 inline px-5'/>
+                <img src='/icons/discord.png' className='h-5 inline'/>
+            </div>
+        </div>
+    </footer>
   )
 }
 

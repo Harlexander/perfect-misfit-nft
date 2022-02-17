@@ -1,0 +1,34 @@
+.blur-circle {
+  filter: blur(250px);
+}
+.css-1wybm3g-Circle.using-icon{
+  background: transparent !important
+}
+.css-1kp3mbv-TimelineMainWrapper{
+  padding: 0 !important
+}
+.nvnv{
+  backdrop-filter: blur(100px);
+}
+
+.collection1 {
+  animation-name: example1;
+  animation-duration: 20s;
+  margin-left: -1000px;
+}
+
+@keyframes example1 {
+  from {margin-left: 100px;}
+  to {margin-left: -1000px;}
+}
+.collection2 {
+  animation-name: example;
+  animation-duration: 20s;
+
+  margin-left: -100px;
+}
+
+@keyframes example {
+  from {margin-left: -1500px;}
+  to {margin-left: -100px;}
+}
