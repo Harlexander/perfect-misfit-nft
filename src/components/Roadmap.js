@@ -4,16 +4,8 @@ import { Zoom } from 'react-reveal';
 import { Africa } from './AfricaSvg'
 
 const Roadmap = () => {
-    const items = [
-        {},
-        {},
-        {},
-        {},
-        {},
-    ];
-    
   return (
-    <div className='my-24 py-10 md:px-20 px-5 relative'>
+    <div className='my-24 py-10 md:px-20 px-5 relative' id='roadmap'>
 
     <div className='h-96 absolute w-96 top-2/4 right-0 bg-[#DC14F3] rounded-full blur-circle'>
     </div>
@@ -22,7 +14,7 @@ const Roadmap = () => {
     <div className='h-60 absolute w-60 top-2/4  left-0 bg-[#E9757E] rounded-full blur-circle'>
     </div>
 
-        <div className='container bg-black relative py-20 text-center text-white rounded-lg text-center'>
+        <div className='container bg-black relative py-20 text-center overflow-hidden text-white rounded-lg text-center'>
             <Africa/>
             <p style={{fontFamily : 'Luckiest Guy, cursive'}} className="py-5 text-5xl">ROADMAP</p>
 
@@ -78,9 +70,9 @@ const Roadmap = () => {
                 <Zoom>
                     <div>
                     <p  style={{fontFamily : 'Luckiest Guy, cursive'}} className="py-3 text-lg md:text-3xl">
-                    METAVERSE COMMUNITY
+                    CHARITY DONATIONS
                     </p>
-                    <p>Holders of the perfect misfits nft get free access to the metaverse communities that would be available after launch</p>
+                    <p>%10 of the revenue gained from the collection would be donated to anti-police brutality organizations</p>
                     </div>
                 </Zoom>
                 <Zoom>

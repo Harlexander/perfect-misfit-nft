@@ -4,8 +4,8 @@ import Container from './Disclosure'
 const FAQ = () => {
   return (
     <div className='container my-40 px-5 md:mx-20 text-white'>
-        <div className='md:grid md:grid-cols-4'>
-            <div>
+        <div className='md:grid md:grid-cols-5'>
+            <div className='md:col-span-2'>
             <p style={{fontFamily : 'Luckiest Guy, cursive'}} className="py-5 text-3xl px-10 md:text-6xl">FREQUENTLY ASKED QUESTIONS</p>
             </div>
             <div className='md:col-span-3'>

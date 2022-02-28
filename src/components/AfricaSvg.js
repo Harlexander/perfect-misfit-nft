@@ -1,6 +1,6 @@
 export const Africa = () => {
     return(
-        <svg className="absolute left-[57.33px] md:w-[1033] md:h-[1233] top-1/4" viewBox="0 0 1033 1233" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute left-[57.33px] md:w-[1033] md:h-[1233] top-1/4 md:top-0" viewBox="0 0 1033 1233" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.3">
 <path d="M369.853 315.57H344.444L331.74 293.79L344.444 272.011H369.853L382.195 293.79L369.853 315.57Z" fill="#2F2C2F"/>
 <path d="M322.302 343.156H297.256L284.551 321.014L297.256 299.235H322.302L335.007 321.014L322.302 343.156Z" fill="#2F2C2F"/>

@@ -58,9 +58,10 @@ export default function Navbar() {
                     <p style={{fontFamily : 'Luckiest Guy, cursive'}} className="text-l text-[#FCD377]">PERFECT <br/> MISFITS</p>
                 </div>
                 <div className='md:block hidden'>
-                    <a href='#' className='mx-5 hover:text-[#FCD377]'>Home</a>
-                    <a href='#' className='mx-5 hover:text-[#FCD377]'>About</a>
-                    <a href='#' className='mx-5 hover:text-[#FCD377]'>Roadmap</a>
+                    <a href='/' className='mx-5 hover:text-[#FCD377]'>Home</a>
+                    <a href='/#about' className='mx-5 hover:text-[#FCD377]'>About</a>
+                    <a href='/#roadmap' className='mx-5 hover:text-[#FCD377]'>Roadmap</a>
+                    <a href='/team' className='mx-5 hover:text-[#FCD377]'>Team</a>
                 </div>
                 <div  className='md:block hidden'>
                     <img src='/icons/twitter.png' className='h-5 inline px-5'/>
@@ -74,9 +75,10 @@ export default function Navbar() {
         </div>
         <div className={`collapse-container w-full pt-5 pb-10 ${!show && "hidden"}`} style={{transition : "all linear 1ms"}}>
                     <div className=''>
-                        <a href='#' className='mx-5 focus:text-[#FCD377] block border-b py-5 text-xl text-white'>Home</a>
-                        <a href='#' className='mx-5 focus:text-[#FCD377] block border-b py-5 text-xl text-white'>About</a>
-                        <a href='#' className='mx-5 focus:text-[#FCD377] block border-b py-5 text-xl text-white'>Roadmap</a>
+                        <a href='/#home' className='mx-5 focus:text-[#FCD377] block border-b py-5 text-xl text-white'>Home</a>
+                        <a href='/#about' className='mx-5 focus:text-[#FCD377] block border-b py-5 text-xl text-white'>About</a>
+                        <a href='/#roadmap' className='mx-5 focus:text-[#FCD377] block border-b py-5 text-xl text-white'>Roadmap</a>
+                        <a href='/team' className='mx-5 focus:text-[#FCD377] block border-b py-5 text-xl text-white'>Team</a>
                     </div>
                 </div>
     </div>
