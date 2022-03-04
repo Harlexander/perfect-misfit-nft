@@ -12,13 +12,13 @@ import Team from './components/Team'
 
 const Home = () => {
   return(
-    <>
+    <div className='h-100'>
      <LandingPage/>
      <About/>
      <Roadmap/>
      <Team/>
      <FAQ/>   
-    </>
+    </div>
  
   )
  }
@@ -30,7 +30,7 @@ const Home = () => {
             position : "Founder",
             social : {
                 type : "twitter",
-                handle : "@OladipupoAshiru"
+                handle : "https://twitter.com/OladipupoAshiru"
                 },
             img : "10-min.png"
          },
@@ -39,15 +39,15 @@ const Home = () => {
             position : "Nft Designer",
             social : {
                 type : "instagram",
-                handle : "@the_melaninartist"
+                handle : "https://www.instagram.com/the_melaninartist"
                 },
                 img : "1-min.png"
          }, {
             name : 'Solomon Nwabuoku',
             position : "UI/UX Designer",
             social : {
-                type : "twitter",
-                handle : "@dozibe"
+                type : "linkedin",
+                handle : "https://www.linkedin.com/in/solomon-nwabuoku/"
                 },
                 img : "9-min.png"
          },
@@ -55,8 +55,8 @@ const Home = () => {
             name : 'Peachy',
             position : "Web Developer",
             social : {
-                type : "linkedin",
-                handle : "@alexander_dunkwu"
+                type : "instagram",
+                handle : "https://www.instagram.com/harlexander_jr/"
                 },
                 img : "3-min.png"
          },
@@ -65,7 +65,7 @@ const Home = () => {
             position : "Developer",
             social : {
                 type : "instagram",
-                handle : "@michaelcosj"
+                handle : "https://www.instagram.com/michaelcosj"
                 },
                 img : "4-min.png"
          },
@@ -74,7 +74,7 @@ const Home = () => {
             position : "Illustrator",
             social : {
                 type : "instagram",
-                handle : "@ella2498"
+                handle : "https://www.behance.net/xever24"
                 },
                 img : "5-min.png"
          },
@@ -83,7 +83,7 @@ const Home = () => {
             position : "Illustrator/Artist ",
             social : {
                 type : "instagram",
-                handle : "@ahonsi_art"
+                handle : "https://www.instagram.com/ahonsi_art"
                 },
                 img : "2-min.png"
          },
@@ -92,7 +92,7 @@ const Home = () => {
             position : "Artist",
             social : {
                 type : "twitter",
-                handle : "@demigod_stello"
+                handle : "https://instagram.com/demigod_stello?utm_medium=copy_link"
                 },
                 img : "6-min.png"
          },
@@ -101,7 +101,7 @@ const Home = () => {
             position : "Promoter",
             social : {
                 type : "twitter",
-                handle : "Tifeofhermommyspot"
+                handle : "https://twitter.com/Tifeofhermommyspot"
                 },
                 img : "7-min.png"
          },
@@ -110,7 +110,7 @@ const Home = () => {
             position : "Social Media Promoter",
             social : {
                 type : "instagram",
-                handle : "@elkardon"
+                handle : "https://instagram.com/elkardon?utm_medium=copy_link"
                 },
                 img : "8-min.png"
          },
@@ -137,7 +137,9 @@ const Home = () => {
                             <p style={{fontFamily : 'Luckiest Guy, cursive'}} className="text-white text-xl md:text-2xl">{member.name}</p>
                             <p className='font-light text-sm text-white'>{member.position}</p>
                             </div>
-                                <img src={`/icons/${(member.social.type === 'twitter' && "twit") || (member.social.type === 'instagram' && "insta") || (member.social.type === 'linkedin' && "linkedin")}.png`} className='self-center h-6 md:h-12 my-auto rounded'/>
+                            <a href={member.social.handle} target="_blank">
+                                <img src={`/icons/${(member.social.type === 'twitter' && "twit") || (member.social.type === 'instagram' && "insta") || (member.social.type === 'linkedin' && "linkedin")}.png`} className='self-center h-12 md:h-12 my-auto rounded'/>
+                            </a>
                         </div>
                     </div>
                 ))
@@ -151,8 +153,8 @@ const Home = () => {
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      <Navbar/>
       <ColorCombo/>
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path="team" element={<Teams/>}/>

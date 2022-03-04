@@ -8,15 +8,23 @@ const LandingPage = () => {
          <div className='grid md:grid-cols-4 text-white gap-3 pt-[7rem] px-5 md:px-20'>
             <div className=''>
                 <p className='font-light text-grey py-4'>The Perfect Misfits Collection contains 10,000 Hand Made NFT collectables by some of Africa's Most Talented Young Artists, Hosted on the Ethereum Blockchain</p>
-                <button className='px-5 mt-8 py-3 font-bold rounded-full bg-[#D90AFA]'>
-                    
-                    <img src="/nft/1-min.png" className='rounded-full h-8 outline-2 outline mr-[-10px] inline'/>
-                    
-                    <img src="/nft/2-min.png" className='rounded-full h-8 outline-2 outline mr-[-10px] inline'/>
-                    
-                    <img src="/nft/3-min.png" className='rounded-full h-8 outline-2 outline mr-3 inline'/>
-                Collect
+                <a href='https://discord.gg/chCtXyBQ'>
+                      <button className='px-5 mt-8 py-3 font-bold rounded-full flex  bg-[#D90AFA]'>
+                    <div className='space-x-[-10px] flex mr-2'>
+                       <div className='h-[30px] w-[35px]'>
+                        <img src="/nft/1-min.png" className='rounded-full h-8 w-8 inline  outline-2 outline '/>
+                    </div>
+                    <div className='h-[30px] w-[35px]'>
+                        <img src="/nft/2-min.png" className='rounded-full h-8 w-8 inline outline-2 outline '/>
+                    </div>
+                    <div className='h-[30px] w-[35px] mr-4'>
+                        <img src="/nft/3-min.png" className='rounded-full h-8 w-8 inline  outline-2 outline '/>
+                    </div> 
+                    </div>
+                     <p className='self-center'> Collect</p>
                 </button>
+                </a>
+              
 
             </div>
             <div className='md:col-span-3 md:px-3'>
@@ -28,14 +36,16 @@ const LandingPage = () => {
         </div>
         </Fade>
         <Fade
-        delay={1000}
+        delay={1500}
         >
             <Collection/> 
+        </Fade>
+        <Fade>
             <div className='flex justify-center md:justify-between flex-wrap md:px-[120px] py-14'>
-            <img src="/icons/fantom.png" className='h-8 mx-3 md:h-10 my-4'/>
-            <img src="/icons/cmc.png" className='h-8 mx-3 md:h-10 my-4'/>
-            <img src="/icons/spr.png" className='h-8 mx-3 md:h-10 my-4'/>
-            <img src="/icons/opensea.png" className='h-8 mx-3 md:h-10 my-4'/>
+            <img src="/icons/fantom.png" className='h-8 mx-3 md:h-10 md:w-30 my-4'/>
+            <img src="/icons/cmc.png" className='h-8 mx-3 md:h-10 md:w-30 my-4'/>
+            <img src="/icons/spr.png" className='h-8 mx-3 md:h-10 md:w-30 my-4'/>
+            <img src="/icons/opensea.png" className='h-8 mx-3 md:h-10 md:w-30 my-4'/>
         </div>
         </Fade>
         

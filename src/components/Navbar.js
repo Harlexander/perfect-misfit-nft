@@ -63,15 +63,18 @@ export default function Navbar() {
                     <a href='/#roadmap' className='mx-5 hover:text-[#FCD377]'>Roadmap</a>
                     <a href='/team' className='mx-5 hover:text-[#FCD377]'>Team</a>
                 </div>
-                <div  className='md:block hidden'>
-                    <img src='/icons/twitter.png' className='h-5 inline px-5'/>
-                    <img src='/icons/discord.png' className='h-5 inline'/>
-                </div>
+                <div className='flex items-center'>
+                   <div className='mr-3'>
+                      <a href='https://twitter.com/perfect_misfits?t=_imwxg4oHBDM0qKUyKv17g&s=08'><img src='/icons/twitter.png' className='h-5 inline px-5'/></a>
+                      <a href='https://discord.gg/chCtXyBQ'><img src='/icons/discord.png' className='h-5 inline'/></a>
+                   </div>
                         <MenuIcon 
                         className='h-10 md:hidden'
                         onClick={toggler}
                         />
                     
+                </div>
+               
         </div>
         <div className={`collapse-container w-full pt-5 pb-10 ${!show && "hidden"}`} style={{transition : "all linear 1ms"}}>
                     <div className=''>

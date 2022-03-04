@@ -14,8 +14,8 @@ const Footer = () => {
                 <a href='#' className='mx-2'>Roadmap</a>
             </div>
             <div>
-                <img src='/icons/twitter.png' className='h-5 inline px-5'/>
-                <img src='/icons/discord.png' className='h-5 inline'/>
+                  <a href='https://twitter.com/perfect_misfits?t=_imwxg4oHBDM0qKUyKv17g&s=08'><img src='/icons/twitter.png' className='h-5 inline px-5'/></a>
+                  <a href='https://discord.gg/chCtXyBQ'><img src='/icons/discord.png' className='h-5 inline'/></a>
             </div>
         </div>
     </footer>
