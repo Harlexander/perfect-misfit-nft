@@ -1,12 +1,11 @@
 import React from 'react'
-import { Slide } from 'react-reveal'
-import { Link } from 'react-router-dom'
 
 const Team = () => {
     const data = [
         {
             name : 'Ashiru Ola',
-            position : "Founder",
+            position : "Project Lead",
+            gmail : true,
             social : {
                 type : "twitter",
                 handle : "https://twitter.com/OladipupoAshiru"
@@ -54,8 +53,8 @@ const Team = () => {
                             <p style={{fontFamily : 'Luckiest Guy, cursive'}} className="text-white text-xl md:text-2xl">{member.name}</p>
                             <p className='font-light text-sm text-white'>{member.position}</p>
                             </div>
-                            <a href={member.social.handle} target="_blank">
-                                <img src={`/icons/${(member.social.type === 'twitter' && "twit") || (member.social.type === 'instagram' && "insta") || (member.social.type === 'linkedin' && "linkedin")}.png`} className='self-center h-12 md:h-12 my-auto rounded'/>
+                            <a href={`${member.gmail ? "mailto:perfectmisfit123@gmail.com" : "#"}`}>
+                                <img src={`/icons/${(member.gmail && "gmail") || (member.social.type === 'twitter' && "twit") || (member.social.type === 'instagram' && "insta") || (member.social.type === 'linkedin' && "linkedin")}.png`} className='self-center h-12 md:h-12 my-auto rounded'/>
                             </a>
                         </div>
                     </div>

@@ -4,10 +4,10 @@ import { Fade } from 'react-reveal'
 const LandingPage = () => {
   return (
     <div>
-        <Fade bottom duration={2000}>
+        <Fade bottom duration={1000} delay={1000}>
          <div className='grid md:grid-cols-4 text-white gap-3 pt-[7rem] px-5 md:px-20'>
             <div className=''>
-                <p className='font-light text-grey py-4'>The Perfect Misfits Collection contains 10,000 Hand Made NFT collectables by some of Africa's Most Talented Young Artists, Hosted on the Ethereum Blockchain</p>
+                <p className='font-light text-grey py-4'>The Perfect Misfits Collection contains 5555 Hand Made NFT collectables by some of Africa's Most Talented Young Artists, Hosted on the Ethereum Blockchain</p>
                 <a href='https://discord.gg/chCtXyBQ'>
                       <button className='px-5 mt-8 py-3 font-bold rounded-full flex  bg-[#D90AFA]'>
                     <div className='space-x-[-10px] flex mr-2'>
