@@ -7,8 +7,9 @@ const LandingPage = () => {
         <Fade bottom duration={1000} delay={1000}>
          <div className='grid md:grid-cols-4 text-white gap-3 pt-[7rem] px-5 md:px-20'>
             <div className=''>
-                <p className='font-light text-grey py-4'>The Perfect Misfits Collection contains 5555 Hand Made NFT collectables by some of Africa's Most Talented Young Artists, Hosted on the Ethereum Blockchain</p>
-                <a href='https://discord.gg/chCtXyBQ'>
+                <p className='font-light text-grey py-4'>In a world plagued with Traditional stereotypes and dying systems,
+                    A generation of people termed Misfits arose to change the rules of the game. Although there are many based around the world, there are only 5555 who can call themselves Perfect Misfits</p>
+                <a href='https://discord.gg/QZjxPTQR5c'>
                       <button className='px-5 mt-8 py-3 font-bold rounded-full flex  bg-[#D90AFA]'>
                     <div className='space-x-[-10px] flex mr-2'>
                        <div className='h-[30px] w-[35px]'>

@@ -7,8 +7,8 @@ const Team = () => {
             position : "Project Lead",
             gmail : true,
             social : {
-                type : "twitter",
-                handle : "https://twitter.com/OladipupoAshiru"
+                type : "gmail",
+                handle : "mailto:oladipupoashiru@gmail.com"
                 },
             img : "10-min.png"
          },
@@ -34,7 +34,7 @@ const Team = () => {
             position : "Web Developer",
             social : {
                 type : "instagram",
-                handle : "https://www.instagram.com/harlexander_jr/"
+                handle : "https://www.instagram.com/peachy_err/"
                 },
                 img : "3-min.png"
          }
@@ -53,8 +53,8 @@ const Team = () => {
                             <p style={{fontFamily : 'Luckiest Guy, cursive'}} className="text-white text-xl md:text-2xl">{member.name}</p>
                             <p className='font-light text-sm text-white'>{member.position}</p>
                             </div>
-                            <a href={`${member.gmail ? "mailto:perfectmisfit123@gmail.com" : "#"}`}>
-                                <img src={`/icons/${(member.gmail && "gmail") || (member.social.type === 'twitter' && "twit") || (member.social.type === 'instagram' && "insta") || (member.social.type === 'linkedin' && "linkedin")}.png`} className='self-center h-12 md:h-12 my-auto rounded'/>
+                            <a href={`${member.social.handle}`} target="_blank">
+                                <img src={`/icons/${(member.social.type === "gmail" && "gmail") || (member.social.type === 'twitter' && "twit") || (member.social.type === 'instagram' && "insta") || (member.social.type === 'linkedin' && "linkedin")}.png`} className='self-center h-12 md:h-12 my-auto rounded'/>
                             </a>
                         </div>
                     </div>

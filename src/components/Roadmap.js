@@ -21,7 +21,7 @@ const Roadmap = () => {
         <div className="col-span-2 px-10" style={{fontFamilt : "inter", fontWeight : "400", fontStyle : 'normal' , color : '#b4b4b4'}}>
             Welcome traveller to the perfect world of misfits; a place for those who feel like they don't belong.
             <br/><br/>
-            Here, you will find 10,000 Nfts hand crafted by some of Africa's most talented artist and it's all hosted on the Ethereum Blockchain.
+            Here, you will find 5555 Nfts hand crafted by some of the World's most talented artist in the Ethereum and Arbitrum Blockchain.
             <br/><br/>
             These pieces detail what it's all like to live in this generation; it captures the euphoric feelings, the lows, the feelings of not good enough, and the joy of overcoming all our fears and obstacles to become at peace with ourselves and society. 
             <br/><br/>
